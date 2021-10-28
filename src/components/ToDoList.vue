@@ -38,7 +38,8 @@
                 label="Titre"
                 :rules="[
                   (val) =>
-                    (val && val.length > 0) || 'Veuillez entrer un titre',
+                    (val && val.length > 0 && val !== ' ') ||
+                    'Veuillez entrer un titre',
                 ]"
               />
               <q-input
@@ -48,7 +49,7 @@
                 label="Description"
                 :rules="[
                   (val) =>
-                    (val && val.length > 0) ||
+                    (val && val.length > 0 && val !== ' ') ||
                     'Veuillez entrer une description',
                 ]"
               />
@@ -75,7 +76,8 @@
                 lazy-rules
                 :rules="[
                   (val) =>
-                    (val && val.length > 0) || 'Veuillez entrer un titre',
+                    (val && val.length > 0 && val !== ' ') ||
+                    'Veuillez entrer un titre',
                 ]"
                 filled
                 v-model="item.titre"
@@ -85,7 +87,8 @@
                 lazy-rules
                 :rules="[
                   (val) =>
-                    (val && val.length > 0) || 'Veuillez entrer un commentaire',
+                    (val && val.length > 0 && val !== ' ') ||
+                    'Veuillez entrer un commentaire',
                 ]"
                 filled
                 v-model="item.description"
