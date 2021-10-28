@@ -15,3 +15,8 @@ Seule contrainte : stocker les cartes dans un fichier .JSON côté backend.
 Livrables :
 Indiquez la durée approximative de réalisation de l'exercice
 Livraison du code source (et si présent, l'exécutable du code)
+
+
+# BUILD
+
+yarn && yarn dev
